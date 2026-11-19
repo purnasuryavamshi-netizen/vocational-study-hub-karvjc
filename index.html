@@ -1,0 +1,43 @@
+< html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11th Vocational Study Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="strip header-strip">
+    <div>
+      <h1> Intermediate Vocational Study Hub</h1>
+      <p class="tagline">Find study websites and YouTube channels for MPC with CS, MPC with AIML, and MLT.</p>
+    </div>
+    <button id="themeBtn" type="button">Dark Mode</button>
+  </header>
+
+  <section class="strip course-strip" aria-label="Course selector">
+    <span class="label">Select Course:</span>
+    <div class="btn-group">
+      <button class="course-btn active" data-course="ALL" type="button">All Courses</button>
+      <button class="course-btn" data-course="MPC with CS" type="button">MPC with CS</button>
+      <button class="course-btn" data-course="MPC with AIML" type="button">MPC with AIML</button>
+      <button class="course-btn" data-course="MLT" type="button">MLT</button>
+    </div>
+  </section>
+
+  <section class="strip search-strip">
+    <label for="searchInput" class="label">Search Topic or Platform:</label>
+    <input id="searchInput" type="text" placeholder="Type e.g. maths, python, AI, lab, khan, NPTEL..." />
+    <button id="clearBtn" type="button">Clear</button>
+  </section>
+
+  <main id="resultsArea" aria-live="polite"></main>
+
+  <section class="strip saved-strip">
+    <div class="label">Your Top 2 Saved Platforms:</div>
+    <div id="savedList" class="saved-items">None saved yet. Click "Save Top 2" on any row.</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
